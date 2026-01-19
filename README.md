@@ -1,2 +1,2 @@
 # Unreal-Engine-Batch-Cleaner
-It'ss batch. It Cleans. It's unreal.
+It's batch. It Cleans. It's unreal.
