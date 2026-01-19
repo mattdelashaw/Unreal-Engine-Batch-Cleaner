@@ -43,6 +43,7 @@ Just double-click the .bat file anytime to run it manually and see what it finds
 # For Task Scheduler setup:
 
 * If you want logging on login, set the arguments field to: `--log`
+* Completely silent, add the `--silent` argument
 * If you want permanent deletion on login: `--delete --log`
 * For "safe mode" (default): leave arguments blank
   * Weakling
