@@ -17,6 +17,7 @@ Clears out those meddelsome `upipelinecache` files for unreal engine games. Usef
 
 Copy the script to a `.bat` file (e.g., `CleanUECache.bat`)
 Save it somewhere permanent like `C:\Users\ME\Scripts\` or your Documents folder
+Star the repo. Copy the file manually. Use `git clone`. You don't have to learn or install `git` for this.
 
 ## Set to run at login via Task Scheduler:
 
