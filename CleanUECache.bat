@@ -74,13 +74,13 @@ REM Search pattern for any file containing "upipelinecache"
 REM This will catch: upipelinecache, .upipelinecache, rec.upipelinecache, etc.
 
 echo --- Searching AppData\Local ---
-for /f "delims=" %%F in ('dir /s /b "%SEARCH_DIR1%\*upipelinecache*" 2^>nul') do (
+for /f "delims=" %%F in ('dir /s /b "%SEARCH_DIR1%\*upipelinecache*" 2^>nul ^| findstr /v /i /c:"\\DELETE_ME\\"') do (
     call :process_file "%%F"
 )
 
 echo.
 echo --- Searching AppData\Roaming ---
-for /f "delims=" %%F in ('dir /s /b "%SEARCH_DIR2%\*upipelinecache*" 2^>nul') do (
+for /f "delims=" %%F in ('dir /s /b "%SEARCH_DIR2%\*upipelinecache*" 2^>nul ^| findstr /v /i /c:"\\DELETE_ME\\"') do (
     call :process_file "%%F"
 )
 
